@@ -92,7 +92,8 @@ yarn start
 ```
 
 ## Deployment
-- Deployed on Netlify/Vercel
+- Deployed on vercel 
+-https://nft-market-lilac-five.vercel.app/
 - Continuous Integration with GitHub Actions
 
 ## Future Roadmap
