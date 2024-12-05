@@ -1,4 +1,3 @@
-import MediumCard, { cardData1 } from "../../components/MediumCard";
 import React from "react";
 
 function DetailedPage1() {

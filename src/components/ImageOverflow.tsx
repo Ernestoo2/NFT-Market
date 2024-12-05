@@ -122,7 +122,7 @@ export default function ImageOverflow({
   url
 }: ImageOverflowProps) {
   return (
-    <div className="relative w-[1\2] text-center rounded-lg ">
+    <div className="relative w-[1/2] text-center rounded-lg ">
       <img src={url} alt={title}
         className="w-[89px] h-[89px] border object-cover rounded-[20%]"
       />
