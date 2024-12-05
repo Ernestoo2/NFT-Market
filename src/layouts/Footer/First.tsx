@@ -9,9 +9,9 @@ export class First extends Component {
        <h3 className="w-[160px] h-[20px] text-white font-semibold">NFT MARKET</h3>
        </div>
        <div className="w-[294px] flex justify-evenly mt-[190px]  text-white">
-       <a href="/">Support</a>
-       <a href="/">Terms of service </a>
-       <a href="/">Licence</a>
+       <a href="/src/ui/MoreFirstUi.tsx">Support</a>
+       <a href="/src/ui/MoreFirstUi.tsx">Terms of service </a>
+       <a href="/src/ui/MoreFirstUi.tsx">Licence</a>
        </div>
       </div>
     )
