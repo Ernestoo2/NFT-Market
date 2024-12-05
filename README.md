@@ -105,7 +105,7 @@ yarn start
 MIT License
 
 ## Contact
-- Email: ezechibuezechibueze@gmail.com.com
+- Email: ezechibuezeernest@gmail.com
 - GitHub: @EzeErnestChibueze
 
 **Built with ❤️ by Eze Ernest Chibueze**
