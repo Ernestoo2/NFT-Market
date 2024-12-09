@@ -13,7 +13,7 @@ interface SmallcardProps {
     smallurl
   }: SmallcardProps) {
     return(
-        <div className="relative w-[1/2] rounded-lg ">
+        <div className=" w-full rounded-lg ">
             <img
             src={smallurl}
             alt={smalltitle}

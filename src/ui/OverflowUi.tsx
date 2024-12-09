@@ -4,7 +4,7 @@ import React, { Component } from "react";
 export class OverflowUi extends Component {
   render() {
     return (
-        <div className="flex mx-[17px] my-[48px] gap-1">
+        <div className="flex overflow-x-auto e-full mx-[17px] my-[48px] gap-1">
         {ImageOverflowData.map((card) => (
           <ImageOverflow
             key={card.id}
