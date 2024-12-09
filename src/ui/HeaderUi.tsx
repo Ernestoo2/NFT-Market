@@ -5,12 +5,12 @@ import React from "react";
 
 function HeaderUi() {
   return (
-    <div className="w-[1920px] flex justify-evenly items-center py-6 ">
-        <Logo/>
-        <Nav/>
-        <Endside/>
+    <div className="w-full max-w-full sm:max-w-3/4  lg:max-w-full  flex justify-between items-center px-4 py-2 mx-auto">
+      <Logo />
+      <Nav />
+      <Endside />
     </div>
-  )
+  );
 }
 
-export default HeaderUi
+export default HeaderUi;

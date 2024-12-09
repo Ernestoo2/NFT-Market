@@ -8,7 +8,7 @@ import { ImSkype } from "react-icons/im";
 export class Second extends Component {
   render() {
     return (
-      <div className=" w-[464px] h-[397px] rounded-tr-[10px] rounded-br-[10px] border-[1px] px-[64px] pt-[40px]">
+      <div className=" w-full h-auto rounded-tr-[10px] rounded-br-[10px] border-[1px] px-[64px] py-[40px]">
         <div className="pb-[34px] text-white flex font-Sora font-semibold text-[16px] flex-col">
           <h4>Auctions</h4>
           <h4>Roadmap</h4>
@@ -18,7 +18,7 @@ export class Second extends Component {
         </div>
         <button className="w-[145px] h-10 rounded-[12px] bg-[#2A27C9] text-white">My account</button>
 
-        <span className="flex w-[200px] h-[20px] mt-[90px] justify-evenly">
+        <span className="flex w-full h-[20px] mt-[90px] justify-evenly">
         <FaSquareFacebook className="fill-[#E2E2ED] w-7 h-7 pr-3"/>
         <FaLinkedin className="fill-[#E2E2ED] w-7 h-7 pr-3" />
         <FaGithubSquare className="fill-[#E2E2ED] w-7 h-7 pr-3" />

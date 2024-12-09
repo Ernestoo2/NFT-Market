@@ -6,7 +6,7 @@ import React from "react";
 
 function DetailedPageUi() {
   return (
-    <div className="w-[1800px]  bg-[#060714] overflow-auto">
+    <div className="flex flex-col  w-full  bg-[#060714]">
       <HeaderUi/>
       <DetailedPage1/>
       <DetailedPage2/>

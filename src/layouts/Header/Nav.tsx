@@ -3,12 +3,12 @@ import React, { Component } from "react";
 export class Nav extends Component {
   render() {
     return (
-      <div className=" text-[#7780A1] ">
-        <nav className="w-full lg:w-[523px] lg:h-[20px] lg:gap-[64px] sm:w-full md:w-[400px] md:text-sm sm:pr-2 h-[20px]  flex justify-evenly ">
-            <a className="" href="/src/ui/MoreFirstUi.tsx">Aucion</a>
-            <a className="" href="/src/ui/MoreFirstUi.tsx">Roadmap</a>
-            <a className="" href="/src/ui/MoreFirstUi.tsx">Discover</a>
-            <a className="" href="/src/ui/MoreFirstUi.tsx">Community</a>
+      <div className="w-full max-w-full  py-3 mx-auto  text-[#7780A1] ">
+        <nav className="w-full flex justify-evenly gap-[20px]   md:text-sm h-auto   ">
+            <a className="hover:text-white transition-colors text-lg" href="/src/ui/MoreFirstUi.tsx">Aucion</a>
+            <a className="hover:text-white transition-colors text-lg" href="/src/ui/MoreFirstUi.tsx">Roadmap</a>
+            <a className="hover:text-white transition-colors text-lg" href="/src/ui/MoreFirstUi.tsx">Discover</a>
+            <a className="hover:text-white transition-colors text-lg" href="/src/ui/MoreFirstUi.tsx">Community</a>
         </nav>
       </div>
     )

@@ -133,16 +133,18 @@ export default function BigCard(
 
 ) {
   return (
-    <div className="w-[448px] h-[767px] rounded-[20px] flex flex-col items-center justify-center p-4 mx-auto">
-      <div className="w-full">
+    <div className="  w-full max-w-[448px] sm:max-w-sm md:max-w-md lg:max-w-lg  sm:max-h-sm md:max-h-md lg:max-h-lg rounded-[20px] flex flex-col  mx-auto">
+      
+        {/* Responsive Image */}
         <img
           src={url}
           alt={description}
-          className="w-[400px] h-[520px] mx-[24px] my-[24px] object-cover rounded-[15px]"
+          className="w-full  h-full sm:h-2/3 md:h-2/2 lg:h-3/4  object-cover rounded-[15px]"
         />
-        <div className="flex items-center justify-between w-full px-2 py-6">
-          <h6 className="w-[276px] text-[#FFFFFF] h-[50px] font-Sora text-lg font-semibold">{title}</h6>
-          <span className="font-bold w-[78px] h-[38px] rounded bg-[#2A27C91A] text-center text-[#514CFF]  pt-2">{price} ETH</span>
+        {/* Title and Price */}
+        <div className="flex items-center justify-between w-full px-2 py-2">
+          <h6 className="w-[276px] text-[#FFFFFF] h-[50px] font-Sora text-lg font-semibold text-center sm:text-left">{title}</h6>
+          <span className="font-bold w-[78px] h-[38px] rounded bg-[#2A27C91A] text-center text-[#514CFF] sm:text-base  pt-2">{price} ETH</span>
         </div>
 
         <div className="flex text-[#FFFFFF]  items-center  w-full px-2">
@@ -170,7 +172,7 @@ export default function BigCard(
         </span>
         </div>
 
-      </div>
+      
     </div>
   );
 }

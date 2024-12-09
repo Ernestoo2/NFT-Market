@@ -4,8 +4,8 @@ export class DivKees
  extends Component {
   render() {
     return (
-      <div className=" flex gap-[36px] justify-center items-center  w-[920px] h-[135px] mx-[400px] my-[100px]">
-        <span className="w-[212px] text-center h-[131px]  ">
+      <div className=" flex gap-[36px] justify-center items-center  w-full h-auto mx-auto my-[50px]">
+        <span className="w-[212px] text-center h-auto  ">
             <img 
             className="ml-20"
             src="/Assets/Spans/UserIcon.png" alt="" />

@@ -75,27 +75,27 @@ export default function SmallestCard({
   likes
 }: CardProps) {
   return (
-    <div className="w-[400px] h-[120px] mx-[25px] mb-5 rounded-[20px] items-center justify-center ">
+    <div className="w-full h-auto mx-auto mb-5 rounded-[20px] px-auto items-center justify-center ">
       <div className="flex  items-center ">
         <div className=" w-full ">
           <img
             src={url}
             alt={description}
-            className="w-[120px] h-[120px] mb-4 object-cover rounded-[15px]"
+            className="w-full h-[120px] mb-4 object-cover rounded-[15px]"
           />
         </div>
         <div className="flex flex-col  w-full px-2 bg-red">
-          <h2 className="w-[256px] text-[#FFFFFF] h-[50px] text-lg font-semibold ">{title}</h2>
-          <div className=" flex flex-row-reverse items-center justify-between">
-            <span className="font-bold w-[78px] h-[38px] rounded bg-[#2A27C91A] pt-2 text-center text-[#514CFF]">{price} ETH</span>
+          <h2 className="w-full text-[#FFFFFF] h-[50px]  text-lg font-semibold ">{title}</h2>
+          <div className=" flex flex-row-reverse items-center mt-14 justify-between">
+            <span className="font-bold w-full h-[38px] rounded bg-[#2A27C91A] pt-2 text-center text-[#514CFF]">{price} ETH</span>
             <span className="text-sm flex flex-row text-gray-500 px-2">
-              <MdOutlineTimer className="w-4 h-4 mr-2" />  {timeLeftHr}:{timeLeftMin}
+              <MdOutlineTimer className="w-full h-4 mr-2" />  {timeLeftHr}:{timeLeftMin}
             </span>
           </div>
           <div className="w-full my-2 border-b border-gray-600 opacity-50"></div>
           <span className="text-[#7780A1] justify-between items-center flex w-full h-[21px] font-inter font-thin">
             {numberBidding} people are bidding
-            <FaHeart className="fill-red-700 stroke-red-800 w-7 h-7 pr-3" />
+            <FaHeart className="fill-red-700 stroke-red-800 w-7 h-7 " />
             {likes}
           </span>
           </div>

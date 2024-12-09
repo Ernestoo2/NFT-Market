@@ -1,14 +1,14 @@
 import "./App.css";
 import "./styles/Global.css";
 import DetailedPageUi from "./ui/DetailedPageUi";
-import ListingPageUi from "./ui/ListingPageUi";
+import ListingPageUi from "./pages/ListingPage/ListingPageUi";
 import React from "react";
 
 function App() {
   return (
     <div className="App ">
       
-      <ListingPageUi/>
+      {/* <ListingPageUi/> */}
       <DetailedPageUi/>
       
     </div>
