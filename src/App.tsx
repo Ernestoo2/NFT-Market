@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App ">
       
-      {/* <ListingPageUi/> */}
+      <ListingPageUi/>
       <DetailedPageUi/>
       
     </div>
