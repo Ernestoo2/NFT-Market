@@ -6,7 +6,7 @@ import React from "react";
 
 function App() {
   return (
-    <div className="App max-w-full ">
+    <div className="App w-full max-w-full ">
       
       <ListingPageUi/>
       <DetailedPageUi/>
