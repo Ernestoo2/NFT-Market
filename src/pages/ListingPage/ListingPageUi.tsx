@@ -13,7 +13,7 @@ import UnderLine from "../../components/UnderLine";
 
 function ListingPageUi() {
   return (
-    <div className="w-full  sm:w-full md:w-full lg:w-full xl:w-full h-auto rounded-[20px] bg-[#060714]  ">
+    <div className="w-full max-w-full  sm:w-full md:w-full lg:w-full xl:w-full h-auto rounded-[20px] bg-[#060714]  ">
       <HeaderUi />
       <BigCardUi />
       <UnderLine/>
