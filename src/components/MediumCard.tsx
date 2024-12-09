@@ -107,7 +107,7 @@ export default function MediumCard({
   likes
 }: CardProps) {
   return (
-    <div className=" w-full max-w-[448px] sm:max-w-sm md:max-w-md lg:max-w-lg  sm:max-h-sm md:max-h-md lg:max-h-lg  bg-[#060714] rounded-[20px] my-3 ">
+    <div className=" w-full max-w-full  bg-[#060714] rounded-[20px] my-3 ">
       <div className=" w-full px-2 ">
         <img
           src={url}

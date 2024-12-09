@@ -2,7 +2,7 @@ import React from "react";
 
 function DetailedPage1() {
     return (
-      <div className="flex  w-full md:flex-col lg:flex-row my-[100px] h-full border-[#262840] border rounded-[20px]">
+      <div className="flex  w-full  md:flex-row my-[100px] h-full border-[#262840] border rounded-[20px]">
         {/* Image Section */}
         <div className="w-full  items-center justify-items-center  h-auto border-[#262840] border rounded-[20px]">
           <img
