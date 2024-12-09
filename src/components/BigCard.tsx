@@ -133,7 +133,7 @@ export default function BigCard(
 
 ) {
   return (
-    <div className="  w-full max-w-[448px] sm:max-w-sm md:max-w-md lg:max-w-lg  sm:max-h-sm md:max-h-md lg:max-h-lg rounded-[20px] flex flex-col  mx-auto">
+    <div className="  w-full  rounded-[20px] flex flex-col  mx-auto">
       
         {/* Responsive Image */}
         <img
