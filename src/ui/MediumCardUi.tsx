@@ -4,7 +4,7 @@ import React from "react";
 const MediumCardUi = () => {
     return (
 
-        <div className=" w-full h-auto">
+        <div className="max-w-full w-full h-auto">
             <div className="w-full  h-[150px] items-center flex flex-col">
                 <p className="text-[15px] font-Inter text-[#7780A1] items-center">OVERLINE</p>
                 <h2 className="w-full h-[40px] text-[#FFFFFF] font-Sora text-[32px] font-600 text-center">Most popular live auctions</h2>
@@ -16,7 +16,7 @@ const MediumCardUi = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6  w-full  my-auto mx-auto py-3 ">
+            <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6  w-full  my-auto mx-auto py-3 ">
                 {cardData1.map(card => (
                     <MediumCard
                         key={card.id}
