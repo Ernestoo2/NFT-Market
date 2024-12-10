@@ -107,20 +107,19 @@ export default function MediumCard({
   likes
 }: CardProps) {
   return (
-    <div className=" w-full max-w-full  bg-[#060714] rounded-[20px] my-3 ">
-      <div className=" w-full px-2 ">
+    <div className=" w-full    rounded-[20px] my-3 ">
+      <div className="w-full px-2 ">
         <img
           src={url}
           alt={description}
-          className="w-full  h-full sm:h-1/2 md:h-2/3 lg:h-3/4 mb-4 object-cover rounded-[15px]"
         />
         <div className="flex items-center justify-between w-[212px] ">
           <h2 className="w-[300px] h-[50px] text-lg font-semibold text-white">{title}</h2>
         </div>
 
-        <div className="flex justify-between  items-center  w-full px-1">
+        <div className="flex items-center justify-between w-full px-1">
 
-          <span className="text-sm flex text-gray-500 items-center pr-6">
+          <span className="flex items-center pr-6 text-sm text-gray-500">
             <MdOutlineTimer className="w-6 h-6 pr-2" />
             {timeLeftHr}:{timeLeftMin}
           </span>
@@ -132,7 +131,7 @@ export default function MediumCard({
         <div className="w-full my-2 border-b border-gray-600 opacity-50"></div>
         <span className="justify-between items-center flex w-full h-[21px] font-inter text-[14px] text-[#7780A1] font-thin">
           {numberBidding} people are bidding
-          <FaHeart className="fill-red-700 stroke-red-800 w-7 h-7 pr-1 pl-1" />
+          <FaHeart className="pl-1 pr-1 fill-red-700 stroke-red-800 w-7 h-7" />
           {likes}
         </span>
       </div>

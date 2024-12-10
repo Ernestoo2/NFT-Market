@@ -15,6 +15,12 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // Custom font
       },
+      screens: {
+        sm: "480px", // For phones or small devices
+        md: "768px", // For tablets or medium devices
+        lg: "1024px", // For desktops or large devices
+        xl: "1280px", // For extra-large screens
+      },
     },
   },
   plugins: [

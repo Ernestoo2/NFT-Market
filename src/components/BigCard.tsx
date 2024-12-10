@@ -139,7 +139,7 @@ export default function BigCard(
         <img
           src={url}
           alt={description}
-          className="w-full  h-full sm:h-2/3 md:h-2/2 lg:h-3/4  object-cover rounded-[15px]"
+          className="w-full  h-full object-cover rounded-[15px]"
         />
         {/* Title and Price */}
         <div className="flex items-center justify-between w-full px-2 py-2">
@@ -148,13 +148,13 @@ export default function BigCard(
         </div>
 
         <div className="flex text-[#FFFFFF]  items-center  w-full px-2">
-          <span className="text-sm flexitems-center px-2"> <MdOutlineTimer />   </span>
-          <span className="text-sm flex flex-row ">
+          <span className="px-2 text-sm flexitems-center"> <MdOutlineTimer />   </span>
+          <span className="flex flex-row text-sm ">
             {timeLeftHr}:{timeLeftMin}  left
           </span>
         </div>
         <div className="w-full my-2 border-b border-gray-300"></div>
-        <div className="w-full flex px-3 items-center py-4">
+        <div className="flex items-center w-full px-3 py-4">
           <div className="flex space-x-[-8px] hover:space-x-2 transition-all duration-300 ease-in-out group">
             {smallcardData.map((card) => (
               <SmallCard

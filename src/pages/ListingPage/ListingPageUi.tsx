@@ -13,15 +13,15 @@ import UnderLine from "../../components/UnderLine";
 
 function ListingPageUi() {
   return (
-    <div className="w-full bg-[#060714] flex justify-center">
+    <div className="w-full sm:w-screen md:w-[100%] lg:w-[100%] bg-[#060714] flex justify-center">
       {/* Container with responsive widths for sm, md, and lg */}
-      <div className="w-full sm:w-[90%] md:w-[90%] lg:w-[70%] h-auto rounded-[20px]">
+      <div className="w-full   h-auto rounded-[20px]">
         <HeaderUi />
         <BigCardUi />
         <UnderLine />
 
         {/* Grid layout for cards */}
-        <div className="grid gap-6 px-4 my-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:mx-0 md:mx-4">
+        <div className="">
           <MoreFirstUi />
           <MainCard />
           <SmallestCardUi />
