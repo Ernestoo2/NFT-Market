@@ -9,7 +9,7 @@ export class MoreFirstUi extends Component {
                     className="w-full break-normal text-[#FFFFFF] h-[80px] mx-auto my-[40px] font-600 text-[32px]"
                 >Check out the hottest Sale offers</h2>
 
-                <div className="relative flex overflow-x-scroll ">
+                <div className=" flex w-full h-auto  overflow-x-scroll  mx-auto gap-[20px] ">
 
                     {cardData1.map(card => (
                         <MediumCard

@@ -15,7 +15,7 @@ function ListingPageUi() {
   return (
     <div className="w-full flex justify-center bg-[#060714]">
       {/* Outer container with max-widths for each media breakpoint */}
-      <div className="w-full  md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] h-auto rounded-[20px] px-4">
+      <div className="w-full h-auto rounded-[20px] px-4">
         <HeaderUi />
         <BigCardUi />
         <UnderLine />

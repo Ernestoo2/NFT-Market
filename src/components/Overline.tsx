@@ -6,7 +6,7 @@ function Overline() {
         <img 
         className="w-2/3 h-auto rounded-[20px]"
         src="/Assets/LeftImage.png" alt="" />
-      <div className="w-full  h-auto my-[19px] mx-[24px]">
+      <div className="w-full  h-auto my-[19px] mx-[24px] py-40 px-40">
         <p className="text-[#7780A1] text-[15px] font-500  ">OVERLINE</p>
         <h2 className="text-[#FFFFFF] font-600 text-[42px] w-full   ">Habitant tristique aliquam in vel scelerisque</h2>
         <p className="text-[#7780A1] w-full break-normal">Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.</p>

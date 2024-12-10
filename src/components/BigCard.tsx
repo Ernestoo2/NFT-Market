@@ -139,7 +139,7 @@ export default function BigCard(
         <img
           src={url}
           alt={description}
-          className="w-full  h-full object-cover rounded-[15px]"
+          className="w-full h-[500px] rounded-[20px] "
         />
         {/* Title and Price */}
         <div className="flex items-center justify-between w-full px-2 py-2">

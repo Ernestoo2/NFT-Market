@@ -5,7 +5,7 @@ export class MainCard extends Component {
         return (
             <div className="bg-[#060714] text-center w-full border rounded-br-[20px] rounded-tr-[20px] rounded-bl-[20px] gap-[20px]">
                 <img
-                    className="w-full h-auto  rounded-[20px] "
+                    className="w-2/3 h-auto mx-auto  rounded-[20px] "
                     src="/Assets/MainImage.png"
                     alt="Main-image" />
                 

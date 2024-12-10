@@ -77,11 +77,11 @@ export default function SmallestCard({
   return (
     <div className="w-full h-auto mx-auto mb-5 rounded-[20px] px-auto items-center justify-center ">
       <div className="flex  items-center ">
-        <div className=" w-full ">
+        <div className=" w-2/3 ">
           <img
             src={url}
             alt={description}
-            className="w-full h-[120px] mb-4 object-cover rounded-[15px]"
+            className="w-full h-[130px] mb-4 object-cover rounded-[15px]"
           />
         </div>
         <div className="flex flex-col  w-full px-2 bg-red">

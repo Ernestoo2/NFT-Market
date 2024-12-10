@@ -107,14 +107,15 @@ export default function MediumCard({
   likes
 }: CardProps) {
   return (
-    <div className=" w-full    rounded-[20px] my-3 ">
+    <div className=" w-full h-auto flex    rounded-[20px] my-3 ">
       <div className="w-full px-2 ">
         <img
           src={url}
+          className="w-full h-[450px] rounded-[20px]"
           alt={description}
         />
         <div className="flex items-center justify-between w-[212px] ">
-          <h2 className="w-[300px] h-[50px] text-lg font-semibold text-white">{title}</h2>
+          <h2 className="w-full h-[50px] text-lg font-semibold text-white">{title}</h2>
         </div>
 
         <div className="flex items-center justify-between w-full px-1">

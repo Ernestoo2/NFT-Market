@@ -16,7 +16,7 @@ const MediumCardUi = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6  w-full  my-auto mx-auto py-3 ">
+            <div className="flex  w-full  my-auto mx-auto py-3 ">
                 {cardData1.map(card => (
                     <MediumCard
                         key={card.id}
