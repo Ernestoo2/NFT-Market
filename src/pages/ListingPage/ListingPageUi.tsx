@@ -13,15 +13,15 @@ import UnderLine from "../../components/UnderLine";
 
 function ListingPageUi() {
   return (
-    <div className="w-full sm:w-screen md:w-[100%] lg:w-[100%] bg-[#060714] flex justify-center">
-      {/* Container with responsive widths for sm, md, and lg */}
-      <div className="w-full   h-auto rounded-[20px]">
+    <div className="w-full flex justify-center bg-[#060714]">
+      {/* Outer container with max-widths for each media breakpoint */}
+      <div className="w-full sm:max-w-[480px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] h-auto rounded-[20px] px-4">
         <HeaderUi />
         <BigCardUi />
         <UnderLine />
 
         {/* Grid layout for cards */}
-        <div className="">
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <MoreFirstUi />
           <MainCard />
           <SmallestCardUi />
@@ -30,7 +30,7 @@ function ListingPageUi() {
         <Overline />
 
         {/* Divider */}
-        <div className="border border-[#262840]"></div>
+        <div className="border border-[#262840] mt-6"></div>
         <DivKees />
 
         {/* Image */}
