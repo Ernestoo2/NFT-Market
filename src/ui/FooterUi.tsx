@@ -5,7 +5,7 @@ import Third from "../layouts/Footer/Third";
 
 function FooterUi() {
   return (
-    <div className="w-full  max-w-full    h-auto grid gap-3 md:grid-cols-2 sm:grid-cols-1  lg:grid-cols-3 pb-7">
+    <div className="flex w-full h-auto max-w-full gap-3 pb-7">
       <First/>
       <Second/>
       <Third/>

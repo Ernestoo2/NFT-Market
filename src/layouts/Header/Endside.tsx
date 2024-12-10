@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export class Endside extends Component {
   render() {
     return (
-      <div className="flex w-full sm:w-full md:w-full lg:w-full h-52px gap-2 mx-1 ">
+      <div className="flex w-full gap-2 mx-1 h-52px">
         <button 
         className="w-1/2 h-[52px] text-lg text-[#7780A1] rounded-[12px] bg-white  border-[2px] border-[#7780A1]">
           Contact

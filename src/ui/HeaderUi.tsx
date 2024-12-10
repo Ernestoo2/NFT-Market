@@ -5,8 +5,8 @@ import React from "react";
 
 function HeaderUi() {
   return (
-    <div className="w-full max-w-full shadow bg-[#2a32a3] flex justify-between items-center px-4 py-2 mx-auto">
-      <div className="text-sm sm:text-base md:text-lg lg:text-xl">
+    <div className="w-full h-auto max-w-full px-4 py-2 mx-auto shadow">
+      <div className="flex text-sm sm:text-base md:text-lg lg:text-xl">
         <Logo />
         <Nav />
         <Endside />
