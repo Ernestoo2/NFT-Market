@@ -22,7 +22,7 @@ export class SmallestCardUi extends Component {
         ))}
 
         <button
-          className="w-3/4 items-center justify-center text-[#FFFFFF1A] h-[52px]  my-[40px] rounded border-[#262840] border-[2px]"
+          className="w-3/4 text-3xl items-center justify-center text-[#FFFFFF1A] h-[52px]  my-[40px] rounded border-[#262840] border-[2px]"
         >Show me more</button>
       </div>
     )

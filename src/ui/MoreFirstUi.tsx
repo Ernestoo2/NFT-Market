@@ -27,7 +27,7 @@ export class MoreFirstUi extends Component {
                     ))}
                 </div>
                 <button
-                    className="w-3/4 items-center justify-center text-[#FFFFFF1A] h-[52px] my-[40px]  mx-auto rounded border-[#262840] border-[2px]"
+                    className="w-3/4 items-center text-3xl justify-center text-[#FFFFFF1A] h-[52px] my-[40px]  mx-auto rounded border-[#262840] border-[2px]"
                 >Show me more</button>
             </div>
         )

@@ -85,15 +85,15 @@ export default function SmallestCard({
           />
         </div>
         <div className="flex flex-col  w-full px-2 bg-red">
-          <h2 className="w-full text-[#FFFFFF] h-[50px]  text-lg font-semibold ">{title}</h2>
-          <div className=" flex flex-row-reverse items-center mt-14 justify-between">
+          <h2 className="w-full text-[#FFFFFF] h-[50px]  text-3xl font-semibold ">{title}</h2>
+          <div className=" flex flex-row-reverse items-center mt-14 text-xl justify-between">
             <span className="font-bold w-full h-[38px] rounded bg-[#2A27C91A] pt-2 text-center text-[#514CFF]">{price} ETH</span>
             <span className="text-sm flex flex-row text-gray-500 px-2">
-              <MdOutlineTimer className="w-full h-4 mr-2" />  {timeLeftHr}:{timeLeftMin}
+              <MdOutlineTimer className="w-full h-4 mr-2 text-xl" />  {timeLeftHr}:{timeLeftMin}
             </span>
           </div>
           <div className="w-full my-2 border-b border-gray-600 opacity-50"></div>
-          <span className="text-[#7780A1] justify-between items-center flex w-full h-[21px] font-inter font-thin">
+          <span className="text-xl text-[#7780A1] justify-between items-center flex w-full h-[21px] font-inter font-thin">
             {numberBidding} people are bidding
             <FaHeart className="fill-red-700 stroke-red-800 w-7 h-7 " />
             {likes}
