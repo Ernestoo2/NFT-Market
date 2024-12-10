@@ -13,28 +13,39 @@ import UnderLine from "../../components/UnderLine";
 
 function ListingPageUi() {
   return (
-    <div className="w-full max-w-full h-auto rounded-[20px] bg-[#060714]  ">
-      <HeaderUi />
-      <BigCardUi />
-      <UnderLine/>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:mx-[12%] md:mx-[12px]  my-auto px-[50px]  gap-[40px]">
-        <MoreFirstUi/>
-        <MainCard/>
-        <SmallestCardUi />
-      </div>
-      
-      <Overline/>
+    <div className="w-full bg-[#060714] flex justify-center">
+      {/* Container with responsive widths for sm, md, and lg */}
+      <div className="w-full sm:w-[90%] md:w-[90%] lg:w-[70%] h-auto rounded-[20px]">
+        <HeaderUi />
+        <BigCardUi />
+        <UnderLine />
 
-      <div className="border border-[#262840]"></div>
-      <DivKees/>
-      <img 
-      className="mx-auto my-[100px]"
-      src="/Assets/Folder-Section.png" alt="folder"/>
-      <MediumCardUi />
-      <OverflowUi />
-      <FooterUi />
+        {/* Grid layout for cards */}
+        <div className="grid gap-6 px-4 my-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:mx-0 md:mx-4">
+          <MoreFirstUi />
+          <MainCard />
+          <SmallestCardUi />
+        </div>
+
+        <Overline />
+
+        {/* Divider */}
+        <div className="border border-[#262840]"></div>
+        <DivKees />
+
+        {/* Image */}
+        <img
+          className="mx-auto my-[100px]"
+          src="/Assets/Folder-Section.png"
+          alt="folder"
+        />
+
+        <MediumCardUi />
+        <OverflowUi />
+        <FooterUi />
+      </div>
     </div>
-  )
+  );
 }
 
-export default ListingPageUi
+export default ListingPageUi;

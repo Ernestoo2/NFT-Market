@@ -4,12 +4,12 @@ function Overline() {
   return (
     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 sm:mx-2  w-full h-auto my-16 mx-[25px]">
         <img 
-        className="w-full h-auto rounded-[20px]"
+        className="w-2/3 h-auto rounded-[20px]"
         src="/Assets/LeftImage.png" alt="" />
       <div className="w-full  h-auto my-[19px] mx-[24px]">
         <p className="text-[#7780A1] text-[15px] font-500  ">OVERLINE</p>
         <h2 className="text-[#FFFFFF] font-600 text-[42px] w-full   ">Habitant tristique aliquam in vel scelerisque</h2>
-        <p className="text-[#7780A1] break-normal">Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.</p>
+        <p className="text-[#7780A1] w-full break-normal">Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.</p>
         <div className="flex w-full h-auto py-4 gap-[24px]">
             <span>
                 <img src="/Assets/Vector.png"  alt="" />
