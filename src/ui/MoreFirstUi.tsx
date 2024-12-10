@@ -4,12 +4,12 @@ import React, { Component } from "react";
 export class MoreFirstUi extends Component {
     render() {
         return (
-            <div className="w-full  text-center h-auto rounded-[20px] border">
+            <div className="w-[35%]    text-center h-auto rounded-[20px] border">
                 <h2
                     className="w-full break-normal text-[#FFFFFF] h-[80px] mx-auto my-[40px] font-600 text-[32px]"
                 >Check out the hottest Sale offers</h2>
 
-                <div className=" flex w-full h-auto  overflow-x-scroll  mx-auto gap-[20px] ">
+                <div className=" flex w-4/5 h-auto  overflow-x-scroll  mx-auto gap-[20px] ">
 
                     {cardData1.map(card => (
                         <MediumCard

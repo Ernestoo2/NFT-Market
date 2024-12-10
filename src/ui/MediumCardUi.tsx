@@ -4,7 +4,7 @@ import React from "react";
 const MediumCardUi = () => {
     return (
 
-        <div className="max-w-full w-full h-auto">
+        <div className=" w-[70%] mx-auto  h-auto">
             <div className="w-full  h-[150px] items-center flex flex-col">
                 <p className="text-[15px] font-Inter text-[#7780A1] items-center">OVERLINE</p>
                 <h2 className="w-full h-[40px] text-[#FFFFFF] font-Sora text-[32px] font-600 text-center">Most popular live auctions</h2>
