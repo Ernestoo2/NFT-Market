@@ -1,10 +1,11 @@
-import MediumCard, { cardData1 } from "../components/MediumCard";
+import MediumCard from "../components/MediumCard";
 import React from "react";
+import { cardData1 } from "../utils/api";
 
 const MediumCardUi = () => {
     return (
 
-        <div className=" w-[70%] mx-auto  h-auto">
+        <div className=" w-full mx-auto  h-auto">
             <div className="w-full  h-[150px] items-center flex flex-col">
                 <p className="text-[15px] font-Inter text-[#7780A1] items-center">OVERLINE</p>
                 <h2 className="w-full h-[40px] text-[#FFFFFF] font-Sora text-[32px] font-600 text-center">Most popular live auctions</h2>
@@ -16,7 +17,7 @@ const MediumCardUi = () => {
                 </div>
             </div>
 
-            <div className="flex  w-full  my-auto mx-auto py-3 ">
+            <div className="flex overflow-x-scroll w-full  my-auto mx-auto py-3 ">
                 {cardData1.map(card => (
                     <MediumCard
                         key={card.id}
@@ -37,3 +38,6 @@ const MediumCardUi = () => {
 }
 
 export default MediumCardUi
+
+
+

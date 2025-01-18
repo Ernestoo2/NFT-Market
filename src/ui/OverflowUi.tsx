@@ -1,10 +1,11 @@
-import ImageOverflow, { ImageOverflowData } from "../components/ImageOverflow";
+import ImageOverflow from "../components/ImageOverflow";
 import React, { Component } from "react";
+import { ImageOverflowData } from "../utils/api";
 
 export class OverflowUi extends Component {
   render() {
     return (
-        <div className="flex overflow-x-auto w-full justify-center my-[48px] gap-[20px]">
+      <div className="flex overflow-x-auto w-full justify-start my-[48px] gap-[20px] px-4">
         {ImageOverflowData.map((card) => (
           <ImageOverflow
             key={card.id}
@@ -14,9 +15,9 @@ export class OverflowUi extends Component {
             price={card.price}
           />
         ))}
-        </div>
-    )
+      </div>
+    );
   }
 }
 
-export default OverflowUi
+export default OverflowUi;

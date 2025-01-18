@@ -1,38 +1,44 @@
-import MediumCard, { cardData1 } from "../../components/MediumCard";
+import MediumCard from "../../components/MediumCard";
 import React from "react";
+import { cardData1 } from "../../utils/api";
 
 function DetailedPage2() {
   return (
-    <div className="bg-[#060714] w-full" >
+    <div className="bg-[#060714] w-full">
+      {/* Heading Section */}
+      <div className="w-full flex flex-col items-center py-6">
+        <p className="text-sm md:text-base font-Inter text-[#7780A1]">OVERLINE</p>
+        <h2 className="text-lg md:text-2xl lg:text-3xl text-[#FFFFFF] font-Sora font-semibold text-center">
+          More from this author
+        </h2>
+      </div>
 
-      <div className="w-full  " >
-        <div className="w-full h-[79px] items-center justify-center flex flex-col">
-          <p className="text-[15px] font-Inter text-[#7780A1] items-center">OVERLINE</p>
-          <h2 className="w-full h-[40px] text-[#FFFFFF] font-Sora text-[32px] font-600 text-center">More from this author</h2>
-        </div>
+      {/* Scrollable Card Section */}
+      <div className="w-full overflow-x-scroll flex gap-4 py-4 px-4 md:px-8">
+        {cardData1.map((card) => (
+          <MediumCard
+            key={card.id}
+            id={card.id}
+            title={card.title}
+            description={card.description}
+            url={card.url}
+            price={card.price}
+            timeLeftHr={card.timeLeftHr}
+            timeLeftMin={card.timeLeftMin}
+            numberBidding={card.numberBidding}
+            likes={card.likes}
+          />
+        ))}
+      </div>
 
-
-        <div className="w-full overflow-x-scroll  flex py-5 ">
-          {cardData1.map(card =>  (
-            <MediumCard
-              key={card.id}
-              id={card.id}
-              title={card.title}
-              description={card.description}
-              url={card.url}
-              price={card.price}
-              timeLeftHr={card.timeLeftHr}
-              timeLeftMin={card.timeLeftMin}
-              numberBidding={card.numberBidding}
-              likes={card.likes}
-            />
-          ))}
-        </div>
-
-        <button className="w-full ml-auto rounded-[10px]  h-[52px]  p-3 my-6 border-[2px] gap-10 text-[#7780A1] shadow-[#FFFFFF1A] border-[#7780A1]">Show me more</button>
+      {/* Button Section */}
+      <div className="flex justify-center px-4 md:px-8">
+        <button className="w-full md:w-auto px-6 py-3 rounded-lg border-2 border-[#7780A1] text-[#7780A1] shadow-md hover:bg-[#7780A1] hover:text-white transition">
+          Show me more
+        </button>
       </div>
     </div>
-  )
+  );
 }
 
 export default DetailedPage2;

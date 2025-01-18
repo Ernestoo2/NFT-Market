@@ -21,7 +21,7 @@ function ListingPageUi() {
         <UnderLine />
 
         {/* Grid layout for cards */}
-        <div className="flex w-full gap-20 ">
+        <div className="flex flex-wrap gap-8 justify-center">
           <MoreFirstUi />
           <MainCard />
           <SmallestCardUi />

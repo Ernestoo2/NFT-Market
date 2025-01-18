@@ -6,7 +6,7 @@ import React from "react";
 
 function App() {
   return (
-    <div className="bg-yellow-500 w-fit App">
+    <div className="  App">
       
       <ListingPageUi/>
       <DetailedPageUi/>

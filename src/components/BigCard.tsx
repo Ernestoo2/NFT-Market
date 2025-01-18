@@ -2,6 +2,7 @@ import React from "react";
 import SmallCard from "./VerySmallCard";
 import { FaHeart } from "react-icons/fa";
 import { MdOutlineTimer } from "react-icons/md";
+import { smallcardData } from "../utils/api";
 
 interface CardProps {
   id: number;
@@ -15,168 +16,65 @@ interface CardProps {
   likes: number;
 }
 
-interface SmallcardProps {
-  smallid: number;
-  smalltitle: string;
-  smallurl: string;
-}
-
-export const smallcardData : SmallcardProps[] =[
-  {
-    smallid: 1,
-    smalltitle: "Card 1",
-    smallurl: "/Assets/SmallCards/01.png",
-  },
-  {
-    smallid: 2,
-    smalltitle: "Card 2",
-    smallurl: "/Assets/SmallCards/02.png",
-  },
-  {
-    smallid: 3,
-    smalltitle: "Card 3",
-    smallurl: "/Assets/SmallCards/03.png",
-  },
-  {
-    smallid: 4,
-    smalltitle: "Card 4",
-    smallurl: "/Assets/SmallCards/04.png",
-  },
- 
-
-]
-
-export const cardData: CardProps[] = [
-  {
-    id: 1,
-    title: "Tristique diam a, enim, eros tellus. Viverra etiam",
-    description: "Card property",
-    url: "/Assets/Large/BigCard1.png",
-    price: 2.55,
-    timeLeftHr: 57,
-    timeLeftMin: 15,
-    numberBidding: 102,
-    likes:58,
-  },
-  {
-    id: 2,
-    title: "Vulputate felis purus viverra morbi facilisi eget",
-    description: "Card property",
-    url: "/Assets/Large/MediumCard2.png",
-    price: 3.19,
-    timeLeftHr: 2,
-    timeLeftMin: 41,
-    numberBidding: 35,
-    likes:120,
-  },
-  {
-    id: 3,
-    title: "Dui accumsan leo vestibulum ornare eu",
-    description: "Card property",
-    url: "/Assets/Large/BigCard3.png",
-    price: 1.11,
-    timeLeftHr: 22,
-    timeLeftMin: 59,
-    numberBidding: 102,
-    likes:570,
-  },
-  {
-    id: 4,
-    title: "Tristique diam a, enim, eros tellus. Viverra etiam",
-    description: "Card property",
-    url: "/Assets/Large/BigCard4.png",
-    price: 2.55,
-    timeLeftHr: 57,
-    timeLeftMin: 15,
-    numberBidding: 102,
-    likes:58,
-  },
-  {
-    id: 5,
-    title: "Senectus adipiscing nascetur accumsan etiam",
-    description: "Card property",
-    url: "/Assets/Large/BigCard5.png",
-    price: 1.63,
-    timeLeftHr: 37,
-    timeLeftMin: 1,
-    numberBidding: 12,
-    likes:98,
-  },
-  {
-    id: 6,
-    title: "Mattis at diam lorem nisl nam sed sociis",
-    description: "Card property",
-    url: "/Assets/Large/BigCard6.png",
-    price: 2.55,
-    timeLeftHr: 12,
-    timeLeftMin: 15,
-    numberBidding: 19,
-    likes:58,
-  },
-
-]
-
-
-
-export default function BigCard(
-  {
-    id,
-    title,
-    description,
-    url,
-    price,
-    timeLeftHr,
-    timeLeftMin,
-    numberBidding,
-    likes
-  }: CardProps,
-
-) {
+const BigCard: React.FC<CardProps> = ({
+  id,
+  title,
+  description,
+  url,
+  price,
+  timeLeftHr,
+  timeLeftMin,
+  numberBidding,
+  likes,
+}) => {
   return (
-    <div className="  w-full  rounded-[20px] flex flex-col  mx-auto">
-      
-        {/* Responsive Image */}
-        <img
-          src={url}
-          alt={description}
-          className="w-full h-[500px] rounded-[20px] "
-        />
-        {/* Title and Price */}
-        <div className="flex items-center justify-between w-full px-2 py-2">
-          <h6 className="w-[276px] text-[#FFFFFF] h-[50px] font-Sora text-lg font-semibold text-center sm:text-left">{title}</h6>
-          <span className="font-bold w-[78px] h-[38px] rounded bg-[#2A27C91A] text-center text-[#514CFF] sm:text-base  pt-2">{price} ETH</span>
-        </div>
-
-        <div className="flex text-[#FFFFFF]  items-center  w-full px-2">
-          <span className="px-2 text-sm flexitems-center"> <MdOutlineTimer />   </span>
-          <span className="flex flex-row text-sm ">
-            {timeLeftHr}:{timeLeftMin}  left
-          </span>
-        </div>
-        <div className="w-full my-2 border-b border-gray-300"></div>
-        <div className="flex items-center w-full px-3 py-4">
-          <div className="flex space-x-[-8px] hover:space-x-2 transition-all duration-300 ease-in-out group">
-            {smallcardData.map((card) => (
-              <SmallCard
-                key={card.smallid}
-                smallid={card.smallid}
-                smalltitle={card.smalltitle}
-                smallurl={card.smallurl}
-              />
-            ))}
-          </div>
-          <span className="justify-between items-center text-[#7780A1] flex w-full h-[21px] font-inter font-thin">
-          {numberBidding} people are bidding
-          <FaHeart className="fill-red-700 stroke-red-800 w-7 h-7 " />
-          {likes}
+    <div className="flex-shrink-0 flex flex-col w-[350px] sm:w-[400px] lg:w-[500px] rounded-[20px]   mx-auto bg-[#121212] shadow-lg">
+      {/* Responsive Image */}
+      <img
+        src={url}
+        alt={description}
+        className="w-full h-[200px] sm:h-[250px] lg:h-[300px] rounded-t-[20px] object-cover"
+      />
+      {/* Title and Price */}
+      <div className="flex items-center justify-between w-full px-4 py-2">
+        <h6 className="w-[200px] sm:w-[276px] text-[#FFFFFF] font-Sora text-lg font-semibold text-center sm:text-left">
+          {title}
+        </h6>
+        <span className="font-bold px-3 py-1 text-center text-sm bg-[#2A27C91A] text-[#514CFF] rounded">
+          {price} ETH
         </span>
-        </div>
+      </div>
 
-      
+      {/* Timer */}
+      <div className="flex text-[#FFFFFF] items-center px-4 text-sm">
+        <MdOutlineTimer className="mr-2" />
+        <span>
+          {timeLeftHr}h {timeLeftMin}m left
+        </span>
+      </div>
+
+      <div className="w-full my-2 border-b border-gray-300"></div>
+
+      {/* SmallCards and Likes */}
+      <div className="flex items-center justify-between px-4 py-4">
+        <div className="flex space-x-[-8px] group">
+          {smallcardData.map((card) => (
+            <SmallCard
+              key={card.smallid}
+              smallid={card.smallid}
+              smalltitle={card.smalltitle}
+              smallurl={card.smallurl}
+            />
+          ))}
+        </div>
+        <span className="flex items-center text-[#7780A1]">
+          {numberBidding} bids
+          <FaHeart className="ml-3 text-red-600 w-5 h-5" />
+          <span className="ml-1">{likes}</span>
+        </span>
+      </div>
     </div>
   );
-}
+};
 
-//  Usage:
-// <Card title="My Awesome Card" description="This is a description of the card." /> 
-
+export default BigCard;

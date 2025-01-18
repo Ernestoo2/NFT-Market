@@ -5,12 +5,14 @@ import Third from "../layouts/Footer/Third";
 
 function FooterUi() {
   return (
-    <div className="flex w-full h-auto max-w-full gap-3 pb-7">
-      <First/>
-      <Second/>
-      <Third/>
-    </div>
-  )
+    <footer className="w-full bg-[#060714] text-white py-6 px-4 md:px-8">
+      <div className="flex flex-col md:flex-row gap-6">
+        <First />
+        <Second />
+        <Third />
+      </div>
+    </footer>
+  );
 }
 
 export default FooterUi;

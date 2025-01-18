@@ -1,20 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class Endside extends Component {
-  render() {
-    return (
-      <div className="flex w-full gap-2 mx-1 h-52px">
-        <button 
-        className="w-1/2 h-[52px] text-lg text-[#7780A1] rounded-[12px] bg-white  border-[2px] border-[#7780A1]">
-          Contact
-        </button>
-        <button
-          className="w-2/3 h-[52px] rounded-[12px] text-white bg-[#2A27C9] font-Sora font-[600] text-lg">
-          My account
-        </button>
-      </div>
-    )
-  }
+export default function Endside() {
+  return (
+    <div className="flex flex-col md:flex-row gap-2">
+      <button
+        className="w-full md:w-auto px-4 py-2 text-sm md:text-base text-[#7780A1] rounded-md bg-white border border-[#7780A1] hover:bg-[#7780A1] hover:text-white transition"
+      >
+        Contact
+      </button>
+      <button
+        className="w-full md:w-auto px-4 py-2 text-sm md:text-base text-white rounded-md bg-[#2A27C9] hover:bg-[#1D1AA8] transition"
+      >
+        My Account
+      </button>
+    </div>
+  );
 }
-
-export default Endside
