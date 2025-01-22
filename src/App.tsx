@@ -6,10 +6,12 @@ import React from "react";
 
 function App() {
   return (
-    <div className=" w-full  App">
-      
+    <div className="   App">
+      <div className="w-full h-full min-h-screen bg-[#060714]">
       <ListingPageUi/>
       <DetailedPageUi/>
+      
+      </div>
       
     </div>
   );

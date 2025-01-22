@@ -3,18 +3,20 @@ import React, { Component } from "react";
 export class MainCard extends Component {
     render() {
         return (
-            <div className="bg-[#060714] text-center w-full md:w-1/2 lg:w-1/3 border rounded-br-[20px] rounded-tr-[20px] rounded-bl-[20px] gap-[20px]">
-                <img className="w-2/3 h-auto mx-auto rounded-[20px]" src="/Assets/MainImage.png" alt="Main-image" />
+            <div className="bg-[#060714] text-center w-full h-auto md:w-1/2 lg:w-1/3 border rounded-br-[20px] rounded-tr-[20px] rounded-bl-[20px] ">
+               <div>
+               <img className="w-2/3 h-2/3 mx-auto rounded-[20px]" src="/Assets/MainImage.png" alt="Main-image" />
 
-                <div className="w-full h-auto px-[41px] gap-[8px]">
-                    <h3 className="w-full h-[60px] text-2xl font-[Inter] text-[#FFFFFF] font-600">
+               </div>
+                <div className="w-full h-auto px-6 ">
+                    <h3 className="w-full h-auto text-2xl font-[Inter] text-[#FFFFFF] font-600">
                         Get started creating & selling your NFTs
                     </h3>
-                    <p className="w-full h-[51px] font-400 text-lg my-2 font-[Inter] text-[#7780A1]">
+                    <p className="w-full h-auto font-400 text-lg my-auto font-[Inter] text-[#7780A1]">
                         Nunc gravida faucibus netus feugiat tellus, viverra massa feugiat. Mi est sit.
                     </p>
 
-                    <button className="w-full h-[52px] my-2 gap-[10px] text-xl text-[#FFFFFF] bg-[#4745D0] rounded-[12px]">
+                    <button className="w-full h-[52px] my-2  text-xl text-[#FFFFFF] bg-[#4745D0] rounded-[12px]">
                         Get started
                     </button>
                 </div>

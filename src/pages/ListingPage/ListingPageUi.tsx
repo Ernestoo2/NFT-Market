@@ -13,7 +13,7 @@ import UnderLine from "../../components/UnderLine";
 
 function ListingPageUi() {
   return (
-    <div className="w-full flex justify-center bg-[#060714]">
+    <div className="w-full max-w-screen flex justify-center bg-[#060714]">
       {/* Outer container with max-widths for each media breakpoint */}
       <div className="w-full h-auto rounded-[20px] px-4">
         <HeaderUi />

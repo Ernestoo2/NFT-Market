@@ -6,7 +6,7 @@ import React from "react";
 
 function DetailedPageUi() {
   return (
-    <div className="flex flex-col max-w-full  w-full  bg-[#060714]">
+    <div className="flex flex-col   w-full  bg-[#060714]">
       <HeaderUi/>
       <DetailedPage1/>
       <DetailedPage2/>
