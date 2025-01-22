@@ -4,7 +4,7 @@ import { cardData1 } from "../../utils/api";
 
 function DetailedPage2() {
   return (
-    <div className="bg-[#060714] w-full">
+    <div className="bg-[#060714] w-full max-w-screen-lg mx-auto px-4">
       {/* Heading Section */}
       <div className="w-full flex flex-col items-center py-6">
         <p className="text-sm md:text-base font-Inter text-[#7780A1]">OVERLINE</p>
@@ -14,7 +14,7 @@ function DetailedPage2() {
       </div>
 
       {/* Scrollable Card Section */}
-      <div className="w-full overflow-x-scroll flex gap-4 py-4 px-4 md:px-8">
+      <div className="w-full overflow-x-auto flex gap-4 py-4 px-4 md:px-8">
         {cardData1.map((card) => (
           <MediumCard
             key={card.id}
