@@ -3,19 +3,7 @@ import SmallCard from "./VerySmallCard";
 import { FaHeart } from "react-icons/fa";
 import { MdOutlineTimer } from "react-icons/md";
 import { smallcardData } from "../utils/api";
-
-interface CardProps {
-  id: number;
-  title: string;
-  description: string;
-  url: string;
-  
-  price: number;
-  timeLeftHr: number;
-  timeLeftMin: number;
-  numberBidding: number;
-  likes: number;
-}
+import { CardProps } from "../utils/type";
 
 const BigCard: React.FC<CardProps> = ({
   id,
@@ -30,7 +18,7 @@ const BigCard: React.FC<CardProps> = ({
   likes,
 }) => {
   return (
-    <div className="flex-shrink-0 flex flex-col w-[350px] sm:w-[400px] lg:w-[500px] rounded-[20px]   mx-auto bg-[#121212] shadow-lg">
+    <div className="flex-shrink-0 flex flex-col w-[250px] sm:w-[300px] lg:w-[350px] xl:w-[400px] rounded-[20px]   mx-auto bg-[#121212] shadow-lg">
       {/* Responsive Image */}
       <img
         src={url}
@@ -41,7 +29,7 @@ const BigCard: React.FC<CardProps> = ({
       />
       {/* Title and Price */}
       <div className="flex items-center justify-between w-full px-4 py-2">
-        <h6 className="w-[200px] sm:w-[276px] text-[#FFFFFF] font-Sora text-lg font-semibold text-center sm:text-left">
+        <h6 className="w-[200px] sm:w-[276px] text-[#FFFFFF] font-Sora text-base font-semibold text-balance  sm:text-left">
           {title}
         </h6>
         <span className="font-bold px-3 py-1 text-center text-sm bg-[#2A27C91A] text-[#514CFF] rounded">
@@ -60,8 +48,8 @@ const BigCard: React.FC<CardProps> = ({
       <div className="w-full my-2 border-b border-gray-300"></div>
 
       {/* SmallCards and Likes */}
-      <div className="flex items-center justify-between px-4 py-4">
-        <div className="flex space-x-[-8px] group">
+      <div className="flex items-center justify-between px-4 ">
+        <div className="flex space-x-[-3px] group">
           {smallcardData.map((card) => (
             <SmallCard
               key={card.smallid}
@@ -71,11 +59,23 @@ const BigCard: React.FC<CardProps> = ({
             />
           ))}
         </div>
-        <span className="flex items-center text-[#7780A1]">
-          {numberBidding} bids
-          <FaHeart className="ml-3 text-red-600 w-5 h-5" />
+        <span className="justify-between items-center  flex w-full px-2 h-auto font-inter text-[10px] text-[#7780A1] font-thin">
+          {numberBidding} People are bidding
+         <div className=" flex gap-1">
+         <svg
+            className="w-4 h-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="red"
+            stroke="gray"
+            strokeWidth="1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg>
           <span className="ml-1">{likes}</span>
+         </div>
         </span>
+        
       </div>
     </div>
   );

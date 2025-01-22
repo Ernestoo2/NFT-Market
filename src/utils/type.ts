@@ -9,7 +9,7 @@ export interface CardProps {
     numberBidding: number;
     likes: number;
   }
- 
+
   export interface SmallCardProps {
     smallid: number;
     smalltitle: string;

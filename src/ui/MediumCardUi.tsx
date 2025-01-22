@@ -17,7 +17,7 @@ const MediumCardUi = () => {
                 </div>
             </div>
 
-            <div className="flex overflow-x-scroll w-full  my-auto mx-auto py-3 ">
+            <div className="flex overflow-x-scroll w-full gap-4  my-auto mx-auto py-3 ">
                 {cardData1.map(card => (
                     <MediumCard
                         key={card.id}
