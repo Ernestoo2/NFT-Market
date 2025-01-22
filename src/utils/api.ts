@@ -17,6 +17,7 @@ export const cardData: CardProps[] = [
     timeLeftHr: 57,
     timeLeftMin: 15,
     numberBidding: 102,
+   
     likes:58,
   },
   {
@@ -281,6 +282,7 @@ export const ImageOverflowData: ImageOverflowProps[] = [
     title: "Card 13",
     url: "/Assets/Overflow/image13.png",
     price: 2.49,
+    
   },
   {
     id: 14,

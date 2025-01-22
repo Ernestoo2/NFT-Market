@@ -9,6 +9,7 @@ interface CardProps {
   title: string;
   description: string;
   url: string;
+  
   price: number;
   timeLeftHr: number;
   timeLeftMin: number;
@@ -21,6 +22,7 @@ const BigCard: React.FC<CardProps> = ({
   title,
   description,
   url,
+  
   price,
   timeLeftHr,
   timeLeftMin,
@@ -32,6 +34,8 @@ const BigCard: React.FC<CardProps> = ({
       {/* Responsive Image */}
       <img
         src={url}
+        loading="lazy"
+        onError={(e) => (e.currentTarget.src = "/public/Assets/Large/Bigcard1.png")}
         alt={description}
         className="w-full h-[200px] sm:h-[250px] lg:h-[300px] rounded-t-[20px] object-cover"
       />
