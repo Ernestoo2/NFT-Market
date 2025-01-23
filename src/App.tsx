@@ -6,8 +6,8 @@ import React from "react";
 
 function App() {
   return (
-    <div className="   App">
-      <div className="w-full h-full min-h-screen bg-[#060714]">
+    <div className=" App">
+      <div className="w-full h-full min-h-screen bg-[#060714] overflow-hidden">
       <ListingPageUi/>
       <DetailedPageUi/>
       

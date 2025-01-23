@@ -1,5 +1,4 @@
 import React from "react";
-import { FaHeart } from "react-icons/fa";
 import { MdOutlineTimer } from "react-icons/md";
 
 interface CardProps {

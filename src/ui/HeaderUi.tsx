@@ -7,7 +7,7 @@ function HeaderUi() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-[#060714] shadow-md">
+    <header className="w-full max-w-screen bg-[#060714] shadow-md">
       <div className="flex items-center justify-between px-4 py-3 md:px-6">
         {/* Logo */}
         <Logo />

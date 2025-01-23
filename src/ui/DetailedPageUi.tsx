@@ -6,11 +6,13 @@ import React from "react";
 
 function DetailedPageUi() {
   return (
-    <div className="flex flex-col   w-full  bg-[#060714]">
+    <div className="w-full  bg-[#060714]">
+      <div className="">
       <HeaderUi/>
       <DetailedPage1/>
       <DetailedPage2/>
       <FooterUi/>
+      </div>
     </div>
   )
 }
