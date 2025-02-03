@@ -9,8 +9,7 @@ const BigCard: React.FC<CardProps> = ({
   id,
   title,
   description,
-  url,
-  
+  url,  
   price,
   timeLeftHr,
   timeLeftMin,

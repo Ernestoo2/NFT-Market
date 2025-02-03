@@ -10,6 +10,7 @@ import Overline from "../../components/Overline";
 import React from "react";
 import SmallestCardUi from "../../ui/SmallestCardUi";
 import UnderLine from "../../components/UnderLine";
+import image4 from "../../Assets/Folder-Section.png";
 
 function ListingPageUi() {
   return (
@@ -36,7 +37,7 @@ function ListingPageUi() {
         {/* Image */}
         <img
           className="mx-auto my-[100px]"
-          src="/Assets/Folder-Section.png"
+          src={image4}
           alt="folder"
         />
 

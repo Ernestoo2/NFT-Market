@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "../../Assets/Logo.png";
 
 export default function Logo() {
   return (
     <div className="flex items-center gap-2">
       <img
-        src="/Assets/Logo.png"
+        src={logo}
         alt="NFT Market Logo"
         className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]"
       />

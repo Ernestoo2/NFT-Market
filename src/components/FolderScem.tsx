@@ -6,7 +6,7 @@ export class FolderScem extends Component {
       <div className="">
             <img 
             className="w-32"
-            src="/public/Assets/Folder-Section.png"  
+            src="../Assets/Folder-Section.png"  
             alt="Folder-section"/>
       </div>
     )

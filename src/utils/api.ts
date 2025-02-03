@@ -1,10 +1,48 @@
+import BigCard1 from "../Assets/Large/Bigcard1.png";
+import BigCard2 from "../Assets/Large/Bigcard2.png";
+import BigCard3 from "../Assets/Large/Bigcard3.png";
+import BigCard4 from "../Assets/Large/Bigcard4.png";
+import BigCard5 from "../Assets/Large/Bigcard5.png";
+import BigCard6 from "../Assets/Large/Bigcard6.png";
+import ImageOverflow1 from "../Assets/Overflow/Image1.png";
+import ImageOverflow10 from "../Assets/Overflow/Image10.png";
+import ImageOverflow11 from "../Assets/Overflow/Image11.png";
+import ImageOverflow12 from "../Assets/Overflow/Image12.png";
+import ImageOverflow13 from "../Assets/Overflow/Image13.png";
+import ImageOverflow14 from "../Assets/Overflow/Image14.png";
+import ImageOverflow15 from "../Assets/Overflow/Image15.png";
+import ImageOverflow16 from "../Assets/Overflow/Image16.png";
+import ImageOverflow17 from "../Assets/Overflow/Image17.png";
+import ImageOverflow2 from "../Assets/Overflow/Image2.png";
+import ImageOverflow3 from "../Assets/Overflow/Image3.png";
+import ImageOverflow4 from "../Assets/Overflow/Image4.png";
+import ImageOverflow5 from "../Assets/Overflow/Image5.png";
+import ImageOverflow6 from "../Assets/Overflow/Image6.png";
+import ImageOverflow7 from "../Assets/Overflow/Image7.png";
+import ImageOverflow8 from "../Assets/Overflow/Image8.png";
+import ImageOverflow9 from "../Assets/Overflow/Image9.png";
+import MediumCard1 from "../Assets/Medium/MediumCard1.png";
+import MediumCard2 from "../Assets/Medium/MediumCard2.png";
+import MediumCard3 from "../Assets/Medium/MediumCard3.png";
+import MediumCard4 from "../Assets/Medium/MediumCard4.png";
+import MediumCard5 from "../Assets/Medium/MediumCard5.png";
+import MediumCard6 from "../Assets/Medium/MediumCard6.png";
+import MediumCard7 from "../Assets/Medium/MediumCard7.png";
+import SmallCard1 from "../Assets/Small/small1.png";
+import SmallCard2 from "../Assets/Small/small2.png";
+import SmallCard3 from "../Assets/Small/small3.png";
+import SmallCard4 from "../Assets/Small/SmallCard1.png";
+import smallid1 from "../Assets/SmallCards/01.png";
+import smallid2 from "../Assets/SmallCards/02.png";
+import smallid3 from "../Assets/SmallCards/03.png";
+import smallid4 from "../Assets/SmallCards/04.png";
 import { CardProps, ImageOverflowProps, SmallCardProps } from "./type";
 
 export const smallcardData: SmallCardProps[] = [
-  { smallid: 1, smalltitle: "Card 1", smallurl: "/Assets/SmallCards/01.png" },
-  { smallid: 2, smalltitle: "Card 2", smallurl: "/Assets/SmallCards/02.png" },
-  { smallid: 3, smalltitle: "Card 3", smallurl: "/Assets/SmallCards/03.png" },
-  { smallid: 4, smalltitle: "Card 4", smallurl: "/Assets/SmallCards/04.png" },
+  { smallid: 1, smalltitle: "Card 1", smallurl: smallid1 },
+  { smallid: 2, smalltitle: "Card 2", smallurl: smallid2 },
+  { smallid: 3, smalltitle: "Card 3", smallurl: smallid3 },
+  { smallid: 4, smalltitle: "Card 4", smallurl: smallid4 },
 ];
 
 export const cardData: CardProps[] = [
@@ -12,7 +50,7 @@ export const cardData: CardProps[] = [
     id: 1,
     title: "Tristique diam a, enim, eros tellus. Viverra etiam",
     description: "Card property",
-    url: "/Assets/Large/BigCard1.png",
+    url: BigCard1,
     price: 2.55,
     timeLeftHr: 57,
     timeLeftMin: 15,
@@ -24,7 +62,7 @@ export const cardData: CardProps[] = [
     id: 2,
     title: "Vulputate felis purus viverra morbi facilisi eget",
     description: "Card property",
-    url: "/Assets/Large/BigCard2.png",
+    url: BigCard2,
     price: 3.19,
     timeLeftHr: 2,
     timeLeftMin: 41,
@@ -35,7 +73,7 @@ export const cardData: CardProps[] = [
     id: 3,
     title: "Dui accumsan leo vestibulum ornare eu",
     description: "Card property",
-    url: "/Assets/Large/BigCard3.png",
+    url: BigCard3,
     price: 1.11,
     timeLeftHr: 22,
     timeLeftMin: 59,
@@ -46,7 +84,7 @@ export const cardData: CardProps[] = [
     id: 4,
     title: "Tristique diam a, enim, eros tellus. Viverra etiam",
     description: "Card property",
-    url: "/Assets/Large/BigCard4.png",
+    url: BigCard4,
     price: 2.55,
     timeLeftHr: 57,
     timeLeftMin: 15,
@@ -57,7 +95,7 @@ export const cardData: CardProps[] = [
     id: 5,
     title: "Senectus adipiscing nascetur accumsan etiam",
     description: "Card property",
-    url: "/Assets/Large/BigCard5.png",
+    url: BigCard5,
     price: 1.63,
     timeLeftHr: 37,
     timeLeftMin: 1,
@@ -68,7 +106,7 @@ export const cardData: CardProps[] = [
     id: 6,
     title: "Mattis at diam lorem nisl nam sed sociis",
     description: "Card property",
-    url: "/Assets/Large/BigCard6.png",
+    url: BigCard6,
     price: 2.55,
     timeLeftHr: 12,
     timeLeftMin: 15,
@@ -83,7 +121,7 @@ export const cardData1: CardProps[] = [
     id: 1,
     title: "Fames habitasse risus ultricies tortor sit",
     description: "Card property",
-    url: "/Assets/Medium/MediumCard1.png",
+    url: MediumCard1,
     price: 2.55,
     timeLeftHr: 57,
     timeLeftMin: 15,
@@ -94,7 +132,7 @@ export const cardData1: CardProps[] = [
     id: 2,
     title: "Faucibus habitasse at et platea massa mauris",
     description: "Card property",
-    url: "/Assets/Medium/MediumCard2.png",
+    url: MediumCard2,
     price: 2.55,
     timeLeftHr: 22,
     timeLeftMin: 59,
@@ -105,7 +143,7 @@ export const cardData1: CardProps[] = [
     id: 3,
     title: "Fames habitasse risus ultricies tortor sit",
     description: "Card property",
-    url: "/Assets/Medium/MediumCard3.png",
+    url: MediumCard3,
     price: 2.55,
     timeLeftHr: 57,
     timeLeftMin: 15,
@@ -116,7 +154,7 @@ export const cardData1: CardProps[] = [
     id: 4,
     title: "Fames habitasse risus ultricies tortor sit",
     description: "Card property",
-    url: "/Assets/Medium/MediumCard4.png",
+    url: MediumCard4,
     price: 2.55,
     timeLeftHr: 57,
     timeLeftMin: 15,
@@ -127,7 +165,7 @@ export const cardData1: CardProps[] = [
     id: 5,
     title: "Fames habitasse risus ultricies tortor sit",
     description: "Card property",
-    url: "/Assets/Medium/MediumCard5.png",
+    url: MediumCard5,
     price: 2.55,
     timeLeftHr: 57,
     timeLeftMin: 15,
@@ -138,7 +176,7 @@ export const cardData1: CardProps[] = [
     id: 6,
     title: "Fames habitasse risus ultricies tortor sit",
     description: "Card property",
-    url: "/Assets/Medium/MediumCard6.png",
+    url: MediumCard6,
     price: 2.55,
     timeLeftHr: 57,
     timeLeftMin: 15,
@@ -149,7 +187,7 @@ export const cardData1: CardProps[] = [
     id: 7,
     title: "Fames habitasse risus ultricies tortor sit",
     description: "Card property",
-    url: "/Assets/Medium/MediumCard7.png",
+    url: MediumCard7,
     price: 2.55,
     timeLeftHr: 57,
     timeLeftMin: 15,
@@ -163,7 +201,7 @@ export const cardData2: CardProps[] = [
     id: 1,
     title: "Vulputate velit viverra volutpat volutpat tristique",
     description: "Card property",
-    url: "/Assets/Small/SmallCard1.png",
+    url: SmallCard1,
     price: 2.55,
     timeLeftHr: 57,
     timeLeftMin: 15,
@@ -174,7 +212,7 @@ export const cardData2: CardProps[] = [
     id: 2,
     title: "Egestas blandit sit egestas non sed. Purus semper",
     description: "Card property",
-    url: "/Assets/Small/Small1.png",
+    url: SmallCard2,
     price: 2.15,
     timeLeftHr: 22,
     timeLeftMin: 15,
@@ -185,7 +223,7 @@ export const cardData2: CardProps[] = [
     id: 3,
     title: "Id ut consequat netus nec vel amet ut porta in augue",
     description: "Card property",
-    url: "/Assets/Small/Small2.png",
+    url: SmallCard3,
     price: 2.55,
     timeLeftHr: 22,
     timeLeftMin: 15,
@@ -197,7 +235,7 @@ export const cardData2: CardProps[] = [
     id: 4,
     title: "Sed et nibh felis integer tellus turpin",
     description: "Card property",
-    url: "/Assets/Small/Small3.png",
+    url: SmallCard4,
     price: 2.55,
     timeLeftHr: 57,
     timeLeftMin: 15,
@@ -210,102 +248,104 @@ export const ImageOverflowData: ImageOverflowProps[] = [
   {
     id: 1,
     title: "Card 1",
-    url: "/Assets/Overflow/image1.png",
+    url: ImageOverflow1,
     price: 10.99,
   },
   {
     id: 2,
     title: "Card 2",
-    url: "/Assets/Overflow/image2.png",
+    url: ImageOverflow2,
     price: 8.99,
   },
   {
     id: 3,
     title: "Card 3",
-    url: "/Assets/Overflow/image3.png",
+    url: ImageOverflow3,
     price: 6.99,
   },
   {
     id: 4,
     title: "Card 4",
-    url: "/Assets/Overflow/image4.png",
+    url: ImageOverflow4,
     price: 4.99,
   },
   {
     id: 5,
     title: "Card 5",
-    url: "/Assets/Overflow/Image5.png",
+    url: ImageOverflow5,
     price: 2.99,
   },
   {
     id: 6,
     title: "Card 6",
-    url: "/Assets/Overflow/Image6.png",
+    url: ImageOverflow6,
     price: 1.99,
   },
   {
     id: 7,
     title: "Card 7",
-    url: "/Assets/Overflow/Image7.png",
+    url: ImageOverflow7,
     price: 0.99,
   },
   {
     id: 8,
     title: "Card 8",
-    url: "/Assets/Overflow/Image8.png",
+    url: ImageOverflow8,
     price: 0.49,
   },
   {
     id: 9,
     title: "Card 9",
-    url: "/Assets/Overflow/image9.png",
+    url: ImageOverflow9,
     price: 0.29,
-  }, {
+  }, 
+  {
     id: 10,
     title: "Card 10",
-    url: "/Assets/Overflow/image10.png",
+    url: ImageOverflow10,
     price: 4.19,
-  }, {
+  }, 
+  {
     id: 11,
     title: "Card 11",
-    url: "/Assets/Overflow/image11.png",
+    url: ImageOverflow11,
     price: 3.59,
   },
   {
     id: 12,
     title: "Card 12",
-    url: "/Assets/Overflow/image12.png",
+    url: ImageOverflow12,
     price: 2.09,
   },
   {
     id: 13,
     title: "Card 13",
-    url: "/Assets/Overflow/image13.png",
+    url: ImageOverflow13,
     price: 2.49,
     
   },
   {
     id: 14,
     title: "Card 14",
-    url: "/Assets/Overflow/image14.png",
+    url: ImageOverflow14,
     price: 3.99,
   },
   {
     id: 15,
     title: "Card 15",
-    url: "/Assets/Overflow/image15.png",
+    url: ImageOverflow15,
     price: 2.99,
   },
   {
     id: 16,
     title: "Card 16",
-    url: "/Assets/Overflow/image16.png",
+    url: ImageOverflow16,
     price: 1.99,
   },
   {
     id: 17,
     title: "Card 17",
-    url: "/Assets/Overflow/image17.png",
+    url: ImageOverflow17,
     price : 2.29
   },
 

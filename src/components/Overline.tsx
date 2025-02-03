@@ -1,4 +1,6 @@
 import React from "react";
+import image1 from "../Assets/Vector.png";
+import image2 from "../Assets/Icon.png";
 
 function Overline() {
   return (
@@ -18,12 +20,12 @@ function Overline() {
         </p>
         <div className="flex flex-wrap w-full h-auto py-4 gap-[24px]">
           <span className="w-full sm:w-1/2">
-            <img src="/Assets/Vector.png" alt="" />
+            <img src={image1} alt="" />
             <p className="text-[#FFFFFF]">Sollicitudin sapien</p>
             <p className="text-[#7780A1]">Cursus fermentum</p>
           </span>
           <span className="w-full sm:w-1/2">
-            <img src="/Assets/icon.png" alt="" />
+            <img src={image2} alt="" />
             <p className="text-[#FFFFFF]">Pulvinar metus</p>
             <p className="text-[#7780A1]">Nunc sed</p>
           </span>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import image3 from "../Assets/RightImage.png";
 
 export class UnderLine extends Component {
   render() {
@@ -24,7 +25,7 @@ export class UnderLine extends Component {
         </div>
         <img
           className="w-full md:w-2/3 lg:w-1/2 h-auto rounded-[20px] md:mt-0"
-          src="/Assets/RightImage.png"
+          src={image3}
           alt=""
         />
       </div>

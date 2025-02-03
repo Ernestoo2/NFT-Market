@@ -39,18 +39,18 @@ export default function SmallestCard({
           />
         </div>
         <div className="flex flex-col  w-full px-2 bg-red">
-          <h2 className="w-full text-[#FFFFFF] h-[50px]  text-xl font-semibold ">{title}</h2>
+          <h2 className="w-full text-[#FFFFFF] h-auto tracking-tight  text-base font-semibold ">{title}</h2>
           <div className=" flex flex-row-reverse items-center mt-3 text-base justify-between">
-            <span className="font-bold w-full h-[38px] rounded bg-[#2A27C91A] pt-2 text-center text-[#514CFF]">{price} ETH</span>
+            <span className="font-bold w-1/2 h-auto rounded bg-[#2A27C91A] pt-2 text-center shrink-0 text-[#514CFF]">{price} ETH</span>
             <span className="text-sm flex flex-row text-gray-500 px-2">
-              <MdOutlineTimer className="w-full h-4 mr-2 text-xl" />  {timeLeftHr}:{timeLeftMin}
+              <MdOutlineTimer className=" mr-2 w-5 h-5" />  {timeLeftHr}:{timeLeftMin}
             </span>
           </div>
           <div className="w-full my-2 border-b border-gray-600 opacity-50"></div>
-          <span className="text-base text-[#7780A1]  items-center flex w-full h-[21px] font-inter font-thin">
+          <span className="text-xs text-[#7780A1] tracking-tighter items-center flex w-full h-[21px] font-inter font-thin">
             {numberBidding} people are bidding
             <span className="flex ml-auto gap-3">
-            <FaHeart className="fill-red-700 stroke-red-800 w-7 h-7 " />
+            <FaHeart className="fill-red-700 stroke-red-800 w-4 h-4 " />
             {likes}
             </span>
           </span>
@@ -59,7 +59,3 @@ export default function SmallestCard({
     </div>
   );
 }
-
-//  Usage:
-// <Card title="My Awesome Card" description="This is a description of the card." /> 
-

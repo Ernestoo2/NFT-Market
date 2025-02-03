@@ -1,11 +1,14 @@
 import React, { Component } from "react";
+import image from "../Assets/MainImage.png";
 
 export class MainCard extends Component {
     render() {
         return (
             <div className="bg-[#060714] text-center w-full h-auto md:w-1/2 lg:w-1/3 border rounded-br-[20px] rounded-tr-[20px] rounded-bl-[20px] ">
                <div>
-               <img className="w-2/3 h-2/3 mx-auto rounded-[20px]" src="/Assets/MainImage.png" alt="Main-image" />
+               <img 
+               className="w-2/3 h-2/3 mx-auto rounded-[20px]" 
+               src={image} alt="Main-image" />
 
                </div>
                 <div className="w-full h-auto px-6 ">
