@@ -5,7 +5,7 @@ import { cardData1 } from "../utils/api";
 export class MoreFirstUi extends Component {
     render() {
         return (
-            <div className="w-full md:w-1/3 lg:w-1/4 text-center h-auto rounded-[20px] border">
+            <div className="w-full   text-center h-auto rounded-[20px] border">
                 <h2 className="w-full break-normal text-[#FFFFFF] h-[80px] mx-auto my-[40px] font-600 text-[32px]">
                     Check out the hottest Sale offers
                 </h2>

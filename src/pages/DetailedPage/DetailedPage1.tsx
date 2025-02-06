@@ -9,7 +9,7 @@ import image7 from "../../Assets/Chart.png";
 
 function DetailedPage1() {
   return (
-    <div className="flex flex-col w-full px-5 md:px-0 mx-auto md:flex-row my-10 md:my-20 h-full border-[#262840] border rounded-2xl max-w-screen-lg  ">
+    <div className="flex flex-col w-full px-5  mx-auto md:flex-row my-10 md:px-10 lg:px-16 md:my-20 h-full gap-10 rounded-2xl   ">
 
       {/* Image Section */}
       <div className="flex w-full items-center justify-center h-auto border-[#262840] border rounded-2xl p-4">

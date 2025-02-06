@@ -4,7 +4,7 @@ import { cardData1 } from "../../utils/api";
 
 function DetailedPage2() {
   return (
-    <div className="bg-[#060714] w-full max-w-screen-lg mx-auto px-4">
+    <div className="bg-[#060714] w-full  mx-auto px-4">
       {/* Heading Section */}
       <div className="w-full flex flex-col items-center py-6">
         <p className="text-sm md:text-base font-Inter text-[#7780A1]">OVERLINE</p>

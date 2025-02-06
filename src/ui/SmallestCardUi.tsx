@@ -5,7 +5,7 @@ import { cardData2 } from "../utils/api";
 export class SmallestCardUi extends Component {
   render() {
     return (
-      <div className="w-full md:w-1/3 lg:w-1/4 h-auto text-center rounded-[20px] border border-[#262840]">
+      <div className="w-full h-auto text-center rounded-[20px] border border-[#262840]">
         <h2 className="font-Sora text-[#FFFFFF] font-600 text-[28px] w-full h-[80px] mx-auto my-3">
           Top NFT at a lower price
         </h2>

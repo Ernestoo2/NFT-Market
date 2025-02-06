@@ -18,7 +18,7 @@ export default function ImageOverflow({
       <img
         src={url}
         alt={title}
-        className="w-full h-auto border object-cover rounded-[20%]"
+        className="w-full h-20 border object-cover rounded-[20%]"
         loading="lazy"
       />
       <p className="text-[#7780A1] text-[12px] font-normal font-Inter mt-2">

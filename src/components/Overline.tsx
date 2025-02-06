@@ -1,16 +1,19 @@
 import React from "react";
 import image1 from "../Assets/Vector.png";
-import image2 from "../Assets/Icon.png";
+import image2 from "../Assets/LeftImage.png";
+import image3 from "../Assets/Icon.png";
 
 function Overline() {
   return (
-    <div className="flex flex-wrap w-full h-auto my-16 mx-15">
-      <img
-        className="w-full md:w-2/3 h-auto rounded-[20px] mx-auto md:mx-0"
-        src="/Assets/LeftImage.png"
-        alt=""
-      />
-      <div className="w-full md:w-2/3 lg:w-1/2 h-auto my-[19px] mx-[24px] py-12 px-6 md:px-12 lg:px-16">
+    <div className="flex flex-col w-full h-auto lg:flex-row lg:my-16 lg:mx-15">
+      <div className="w-full">
+        <img
+          className="w-2/3  h-auto rounded-[20px] mx-auto md:mx-0"
+          src={image2}
+          alt=""
+        />
+      </div>
+      <div className="w-full  h-auto my-[19px] mx-[24px] py-12 px-6 md:px-12 lg:px-16">
         <p className="text-[#7780A1] text-[15px] font-500">OVERLINE</p>
         <h2 className="text-[#FFFFFF] font-600 text-[32px] sm:text-[36px] lg:text-[42px] w-full">
           Habitant tristique aliquam in vel scelerisque
@@ -18,14 +21,14 @@ function Overline() {
         <p className="text-[#7780A1] w-full break-normal">
           Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.
         </p>
-        <div className="flex flex-wrap w-full h-auto py-4 gap-[24px]">
+        <div className="flex  w-full h-auto py-4 gap-[24px]">
           <span className="w-full sm:w-1/2">
             <img src={image1} alt="" />
             <p className="text-[#FFFFFF]">Sollicitudin sapien</p>
             <p className="text-[#7780A1]">Cursus fermentum</p>
           </span>
           <span className="w-full sm:w-1/2">
-            <img src={image2} alt="" />
+            <img src={image3} alt="" />
             <p className="text-[#FFFFFF]">Pulvinar metus</p>
             <p className="text-[#7780A1]">Nunc sed</p>
           </span>

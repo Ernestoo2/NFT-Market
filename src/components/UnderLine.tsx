@@ -4,7 +4,7 @@ import image3 from "../Assets/RightImage.png";
 export class UnderLine extends Component {
   render() {
     return (
-      <div className="flex flex-wrap w-full h-auto justify-center my-16 ">
+      <div className="flex flex-col md:flex-row w-full h-auto justify-center my-16 ">
         <div className="w-full  md:w-2/3 lg:w-1/2 h-auto py-6 px-6 md:px-12 lg:px-16 gap-4">
           <p className="text-[#7780A1] text-[13px] font-500">OVERLINE</p>
           <h2 className="text-[#FFFFFF] font-600 text-[24px] sm:text-[36px] lg:text-[42px] w-full">
